@@ -1,0 +1,72 @@
+.logo--mobile {
+  display: none;
+}
+
+.submenu-arrow {
+  display: none;
+}
+.nav-mobile {
+  display: none;
+}
+
+a.product-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 48%;
+  height: 212px;
+  background: #faf8f7;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  transition: $transition;
+}
+
+// ACCORDEON MENU
+.accordion-item {
+  border: none;
+}
+  .accordion-button {
+padding: 0;
+  }
+.accordion-button:not(.collapsed) {
+  background: #fff;
+  box-shadow: none;
+}
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+a.nav-mobile__link,
+button.nav-mobile__link {
+  text-transform: uppercase;
+  color: $color-black;
+  font-size: 18px;
+ 
+  font-family: "Stem Regular";
+  font-weight: 100;
+}
+.nav-mobile__link:before {
+  content: url(/img/vector-line-1.svg);
+  display: inline-block;
+  margin-right: 8px;
+
+}
+.nav-mobile__link {
+  text-transform: uppercase;
+  color: $color-black;
+}
+a.accordion-body__link {
+  color: $color-black;
+  font-size: 14px;
+}
+.accordion-body__link::before {
+  content: url(/img/vector-line-hr.svg);
+  position: absolute;
+  display: inline-block;
+  left: -47px;
+  top: -4px;
+}
